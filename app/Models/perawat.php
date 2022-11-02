@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class perawat extends Model
+{
+    use HasFactory;
+
+    protected $guarded=[];
+
+    public function perawat()
+    {
+    	return $this->belongsTo(Perawat::class);
+    }
+}
